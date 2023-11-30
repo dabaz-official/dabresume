@@ -1,5 +1,6 @@
 import Contact from "@dr/components/sections/Contact";
 import Education from "@dr/components/sections/Education";
+import Language from "@dr/components/sections/Language";
 
 export default function Content() {
   return (
@@ -9,6 +10,7 @@ export default function Content() {
           <div className="flex flex-col gap-12">
             <Contact />
             <Education />
+            <Language />
           </div>
         </div>
       </div>
