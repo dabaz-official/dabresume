@@ -1,6 +1,7 @@
 import Contact from "@dr/components/sections/Contact";
 import Education from "@dr/components/sections/Education";
 import Language from "@dr/components/sections/Language";
+import Stack from "@dr/components/sections/Stack";
 
 export default function Content() {
   return (
@@ -11,6 +12,7 @@ export default function Content() {
             <Contact />
             <Education />
             <Language />
+            <Stack />
           </div>
         </div>
       </div>

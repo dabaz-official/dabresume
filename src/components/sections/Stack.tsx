@@ -5,8 +5,9 @@ export default function Stack() {
         Stack
       </h2>
       <ul role="list" className="mt-4 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-        <li>Chinese</li>
-        <li>English</li>
+        <li>Penetration Testing</li>
+        <li>Python</li>
+        <li>TypeScript</li>
       </ul>
     </div>
   )
