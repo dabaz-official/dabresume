@@ -1,3 +1,5 @@
+import { GlobeIcon, EnvelopeIcon } from "@dr/components/common/Icons";
+
 export const links = {
   header: [
     {
@@ -16,11 +18,13 @@ export const links = {
   contact: [
     {
       name: 'Website',
+      icon: GlobeIcon,
       content: 'dabaz.me',
       href: 'https://www.dabaz.me',
     },
     {
       name: 'Email',
+      icon: EnvelopeIcon,
       content: 'dabaz@dabaz.me',
       href: 'mailto:dabaz@dabaz.me',
     },
