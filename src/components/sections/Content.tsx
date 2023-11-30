@@ -2,6 +2,8 @@ import Contact from "@dr/components/sections/Contact";
 import Education from "@dr/components/sections/Education";
 import Language from "@dr/components/sections/Language";
 import Stack from "@dr/components/sections/Stack";
+import About from "@dr/components/sections/About";
+import Project from "@dr/components/sections/Project";
 
 export default function Content() {
   return (
@@ -13,6 +15,10 @@ export default function Content() {
             <Education />
             <Language />
             <Stack />
+          </div>
+          <div className="flex flex-col gap-12 lg:col-span-2">
+            <About />
+            <Project />
           </div>
         </div>
       </div>
