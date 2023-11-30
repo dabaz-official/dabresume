@@ -9,7 +9,7 @@ export default function Education() {
           <dt className="flex flex-col">
             <span className="block">Bachelor in Information Security</span><span className="block font-medium">BISTU</span>
           </dt>
-          <dd className="font-medium">
+          <dd>
             <p className="text-neutral-600 dark:text-neutral-400">
               2020 - 2024
             </p>
