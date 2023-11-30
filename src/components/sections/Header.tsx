@@ -11,7 +11,9 @@ export default function Header() {
           <div className="ml-4 md:ml-8">
             <p className="text-4xl font-semibold tracking-tighter text-neutral-900 dark:text-neutral-100 md:text-6xl lg:text-7xl">
               DabAZ
-              <span className="block text-neutral-600 dark:text-neutral-400">Cyber Security Engineer</span>
+            </p>
+            <p className="font-semibold tracking-tighter text-xl md:text-2xl lg:text-3xl bg-gradient-to-r from-indigo-600 dark:from-indigo-400 from-10% via-sky-600 dark:via-sky-400 via-30% to-emerald-600 dark:to-emerald-400 to-90% bg-clip-text text-transparent">
+              Cyber Security Engineer
             </p>
             <div className="flex mt-12 space-x-6 text-md text-neutral-600 dark:text-neutral-400">
               {links.header.map((link) => (
