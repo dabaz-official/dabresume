@@ -13,10 +13,12 @@ export default function Header() {
               DabAZ
               <span className="block text-neutral-600 dark:text-neutral-400">Cyber Security Engineer</span>
             </p>
-            <div className="flex mt-12 space-x-6 text-xs text-neutral-600 dark:text-neutral-400">
+            <div className="flex mt-12 space-x-6 text-md text-neutral-600 dark:text-neutral-400">
               {links.header.map((link) => (
                 <div key={link.name}>
-                  <a href={link.href} className="duration-200 hover:bg-gradient-to-r hover:from-indigo-500 from-10% hover:via-sky-500 via-30% hover:to-emerald-500 to-90% hover:text-clip">{link.name}</a>
+                  <a href={link.href} className="duration-200 hover:text-neutral-900 dark:hover:text-neutral-100">
+                    {link.name}
+                  </a>
                 </div>     
               ))}
             </div>
