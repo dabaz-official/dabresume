@@ -16,7 +16,7 @@ export default function Header() {
             <div className="flex mt-12 space-x-6 text-md text-neutral-600 dark:text-neutral-400">
               {links.header.map((link) => (
                 <div key={link.name}>
-                  <a href={link.href} className="duration-200 hover:text-neutral-900 dark:hover:text-neutral-100">
+                  <a href={link.href} className="duration-200 hover:text-neutral-900 dark:hover:text-neutral-100" target="_blank">
                     {link.name}
                   </a>
                 </div>     

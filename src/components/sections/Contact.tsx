@@ -14,7 +14,7 @@ export default function Contact() {
               <link.icon aria-hidden="true" />
             </dt>
             <dd>
-              <a className="duration-200 hover:text-neutral-900 dark:hover:text-neutral-100" href={link.href}>{link.content}</a>
+              <a className="duration-200 hover:text-neutral-900 dark:hover:text-neutral-100" href={link.href} target="_blank">{link.content}</a>
             </dd>
           </div>     
         ))}
