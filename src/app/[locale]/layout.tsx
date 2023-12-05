@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://resume.dabaz.me'),
@@ -59,14 +59,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import {notFound} from 'next/navigation';
+
+const locales = ['en', 'zh-CN'];
+ 
+export default function LocaleLayout({children, params: {locale}}) {
+  if (!locales.includes(locale as any)) notFound();
+ 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
