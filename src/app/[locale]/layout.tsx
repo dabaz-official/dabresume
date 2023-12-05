@@ -1,8 +1,16 @@
+import React, { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import './globals.css'
 
 const inter = DM_Sans({ subsets: ['latin'] })
+
+interface LocaleLayoutProps {
+  children: ReactNode;
+  params: {
+    locale: string;
+  };
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://resume.dabaz.me'),
@@ -63,7 +71,7 @@ import {notFound} from 'next/navigation';
 
 const locales = ['en', 'zh-CN'];
  
-export default function LocaleLayout({children, params: {locale}}) {
+export default function LocaleLayout({children, params: {locale}}: LocaleLayoutProps) {
   if (!locales.includes(locale as any)) notFound();
  
   return (
